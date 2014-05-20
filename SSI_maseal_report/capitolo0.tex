@@ -1,0 +1,96 @@
+\chapter{Lo stato dell'arte}
+\label{chap:fond}
+
+\begin{minipage}{12cm}\textit{Se lo si desidera, utilizzare questo spazio per inserire un breve riassunto di ci\`o che verr\`a detto in questo capitolo. Inserire solo i punti salienti.}
+\end{minipage}
+
+\vspace*{1cm}
+
+\section{Applicazioni simili}
+\label{sec:iniziare}
+
+Molto ciriciokhiugiugiu spesso capita che ad un museo o ad una mostra vorremmo
+approfondire le informazioni dell'autore o dell'opera che stiamo osservando. Tale motivazione
+unita al progresso tecnologico ha portato allo sviluppo di applicazioni che
+permettono di far ci\`{o} semplicemente facendo una fotografia.
+
+\subsection{Artfinder}
+
+Artfinder \`{e} un'applicazione per Iphone o Ipad che permette, scattando una
+foto ad un quadro, scultura o disegno, di avere tutte le informazioni che si
+desiderano. Se la ricerca da esito negativo \`{e} possibile aggiungere
+l'opera con i relativi dati. Inoltre ha anche funzioni social:
+offre l'oppurtunit\`{a} di condividere le passioni artistiche con amici e
+follower.
+Artfinder non \`{e} solo un riconoscitore di immagini, ma permette di riconoscere
+dove sono in mostra gli artisti preferiti, di avere una preview delle opere
+esposte e di creare un'art list. Si possono consultare, inoltre, orari delle
+esposizioni e, grazie a un sistema di geolocalizzazione, segnalare tutti i
+musei, le gallerie o le mostre che sono facilmente raggiungibili dal luogo in
+cui ci si trova.
+Se non si è in possesso di uno smartphone o un tablet Apple,
+Artfinder \`{e} anche un sito internet sul quale si possono ricercare i quadri, acquistare copie direttamente online oppure creare la tua galleria virtuale.
+
+\subsection{Google Goggles}
+ 
+ Google Goggles \`{e} un'applicazione per il riconoscimento visivo delle
+ immagini con tecnologia OCR\footnote{Optical Character Recognition, sono
+ programmi dedicati alla conversione di un'immagine contente testo.}. Tale
+ applicazione ha molteplici possibilit\`{a} di utilizzo, rilevamente quella di
+ ricoscimento delle opere d'arte, la quale \`{e} valsa a Google un accordo con
+ il Metropolitan Museum of Art per fornire link diretti al proprio sito sui capolavori in esso esposti.
+ Inoltre ha anche le seguenti funzionalit\`{a}:
+ \begin{itemize}
+   \item trova informazioni scattando una foto su punti di riferimento, libri,
+   negozi, quadri etc;
+   \item scannerizzando un barcode fornisce dettagli sul prodotto associato ad
+   esso;
+   \item esegue la scansione dei biglietti da visita e comprende i dati
+   pertinenti per crearne un contatto;
+   \item risolve i sudoku.
+ \end{itemize}
+ Tutte le attivit\`{a} riportate sopra si basano sulla possibilit\`{a} di
+ riconoscere gli oggetti o il testo nell'immagine catturata dal telefono.
+ Esso utilizza tecniche multiple per il riconoscimento delle immagini: in primo
+ luogo si cerca di identificare l'oggetto con alcuni algoritmi di riconoscimento
+ e lo confronta con delle immagini di un database di Google. Per aiutare
+ la ricerca si cerca di trovare del testo nell'immagine utilizzando il
+ riconoscimento ottico dei caratteri per avere un'idea migliore di ci\`{o} che
+ l'oggetto potrebbe essere. Utilizza anche il GPS per capire dove si trova
+ l'utente per filtrare i risultati ricevuti per i luoghi di interesse con
+ quelli che sono rilevanti dalla posizione.
+Ci sono divesi algoritmi per l'Object Recognition:
+\begin{itemize}
+	\item \textbf{Edge Detection,} i contorni in un'immagine di solito sono
+   robusti al cambiamento di illuminazione/colore. L'esecuzione di
+   algoritmi di rilevamento sull'immagine, come Canny Edge
+   Detection\footnote{Algoritmo per il riconoscimento dei contorni, utilizza
+   un metodo di calcolo multi-stadio per individuare contorni di molti dei tipi
+   normalmente presenti nelle immagini reali.}, sono in grado di
+   rilevarli nel modello e nell'immagine.
+   In seguito vengono confrontati con le possibili soluzioni del modello.
+   \item  \textbf{Scale Invariant Feature Transform,} i punti chiave delle
+   immagini sono estratti prima da un insieme di immagini di riferimento e poi
+   archiviate in un database. Un oggetto \`{e} riconosciuto in una nuova
+   immagine comparando individualmente ogni feature di questa con il database
+   e cercare candidati che corrispondono alle feature basate sulla distanza euclidea fra i loro vettori di feature.
+ \end{itemize}
+Google Googles era inizialmente cos\`{i} sensibile che in molti casi poteva
+trovare una persona attraverso un'immagine e restituire il link ad un blog che
+conduce a lui. Google si rese conto dei problemi di privacy e ora controlla i
+risultati in modo da non riconoscere le persone. Essendo ancora in fase di
+sperimentazione non tutti i risultati sono accurati, infatti non lavora bene
+con mobili e vestiario.
+Ci sono comunque diverse accorgimenti per ottenere risultati migliori con Google
+Goggles:
+\begin{itemize}
+  \item scattare foto in ambienti con buona illuminazione;
+  \item zoommare ci\`{o} che si vuole fotografare;
+  \item utilizzare il pulsante di ritaglio per concentrarsi sull'area
+  d'interesse;
+  \item usare il telefono con orientamento `paesaggio`;
+  \item tenere le mani ferme ed utilizzare sullo schermo il pulsante di scatto.
+\end{itemize}
+
+
+

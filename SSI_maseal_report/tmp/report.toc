@@ -1,0 +1,7 @@
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Lo stato dell'arte}{1}
+\contentsline {section}{\numberline {1.1}Applicazioni simili}{1}
+\contentsline {subsection}{\numberline {1.1.1}Artfinder}{1}
+\contentsline {subsection}{\numberline {1.1.2}Google Goggles}{2}
+\contentsline {chapter}{Elenco delle figure}{5}
+\contentsline {chapter}{Bibliografia}{5}

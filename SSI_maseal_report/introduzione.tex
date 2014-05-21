@@ -128,8 +128,16 @@ L'algoritmo ASM alterna due passi fondamentali:
 Per il primo passo \`e necessario che l'algoritmo individui dei punti di
 riferimento sempre presenti nelle immagini appartenenti al training set: ci\`o
 implica che il training set deve contenere la stessa tipologia di oggetti e che questi ultimi abbiano una forma tale da prevedere 
-punti di riferimenti ben distinti; ASMs non \`e adatto a immagini di oggetti
-amorfi.
+punti di riferimenti ben distinti.
+
+ASM \`e conveniente da utilizzare nel caso in cui:
+ \begin{itemize}
+   \item Si possiede un insieme di immagini rappresentative del soggetto da rappresentare;
+   \item Gli oggetti hanno una forma definita;
+   \item Si conosce con buona approssimazione il target dell’immagine.
+ \end{itemize}
+Nel caso invece di immagini in cui gli oggetti possono assumere forme molto diverse \`e preferibile utilizzare 
+un approccio ``bottom-up'' (estrazione delle features).
 
 \begin{figure}[htbp]
 \centering

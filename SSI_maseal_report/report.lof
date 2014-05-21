@@ -1,6 +1,0 @@
-\select@language {italian}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A sinistra l'approccio SIFT (ridimensionamento dell'immagine), a destra il metodo SURF (ridimensionamento del filtro).}}{3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Diagramma dei punti di interessi individuati in rapporto alla scala}}{3}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Due blob con contrasti differenti non sono presi in considerazione per il matching}}{4}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces I punti di riferimento trovati nell'immagine di un volto}}{5}

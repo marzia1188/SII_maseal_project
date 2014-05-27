@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.8)  21 MAY 2014 13:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.8)  27 MAY 2014 12:04
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -193,7 +193,20 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 \c@teor=\count105
 \c@defn=\count106
  (./report.aux (./introduzione.aux) (./capitolo0.aux)
-(./capitolo1.aux) (./capitolo2.aux) (./conclusioni.aux) (./appendice.aux))
+(./capitolo1.aux) (./capitolo2.aux) (./conclusioni.aux) (./appendice.aux)
+
+LaTeX Warning: Label `bib2' multiply defined.
+
+
+LaTeX Warning: Label `bib2' multiply defined.
+
+
+LaTeX Warning: Label `bib2' multiply defined.
+
+
+LaTeX Warning: Label `bib2' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -210,8 +223,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 73.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 73.
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-greek/lgrcmr.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/generic/babel-greek/lgrcmr.fd
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
 LaTeX Font Info:    ... okay on input line 73.
@@ -334,23 +346,21 @@ File: Image/Figura1_3.png Graphic file (type png)
 Package pdftex.def Info: Image/Figura1_3.png used on input line 101.
 (pdftex.def)             Requested size: 168.627pt x 57.01198pt.
  [4 <./Image/Figura1_3.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
+<Image/Figura1_4.png, id=28, 222.8325pt x 271.0125pt>
+File: Image/Figura1_4.png Graphic file (type png)
+
+<use Image/Figura1_4.png>
+Package pdftex.def Info: Image/Figura1_4.png used on input line 137.
+(pdftex.def)             Requested size: 89.13141pt x 108.40306pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
-
-<Image/Figura1_4.png, id=28, 222.8325pt x 271.0125pt>
-File: Image/Figura1_4.png Graphic file (type png)
-
-<use Image/Figura1_4.png>
-Package pdftex.def Info: Image/Figura1_4.png used on input line 144.
-(pdftex.def)             Requested size: 89.13141pt x 108.40306pt.
- [5] [6 <./Image/Figura1_4.png (PNG copy)>] [7])
-[8]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+ [5 <./Image/Figura1_4.png (PNG copy)>] [6] [7]) [8] [9]
 \openout2 = `capitolo0.aux'.
 
  (./capitolo0.tex)
@@ -359,18 +369,18 @@ Package pdftex.def Info: Image/Figura1_4.png used on input line 144.
  (./capitolo1.tex)
 \openout2 = `capitolo2.aux'.
 
- (./capitolo2.tex)
+
+(./capitolo2.tex)
 \openout2 = `conclusioni.aux'.
 
  (./conclusioni.tex)
 \openout2 = `appendice.aux'.
 
-
-(./appendice.tex) (./report.lof)
+ (./appendice.tex) (./report.lof)
 \tf@lof=\write4
 \openout4 = `report.lof'.
 
- [9
+ [10
 
 
 
@@ -383,34 +393,37 @@ Package pdftex.def Info: Image/Figura1_4.png used on input line 144.
 
 
 
-] [10
+]
+[11
 
-] (./report.aux (./introduzione.aux)
-(./capitolo0.aux) (./capitolo1.aux) (./capitolo2.aux) (./conclusioni.aux)
-(./appendice.aux)) ) 
+] (./report.aux (./introduzione.aux) (./capitolo0.aux) (./capitolo1.aux)
+(./capitolo2.aux) (./conclusioni.aux) (./appendice.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3371 strings out of 493315
- 45446 string characters out of 6137905
- 112033 words of memory out of 5000000
- 6688 multiletter control sequences out of 15000+600000
+ 3370 strings out of 493315
+ 45448 string characters out of 6137905
+ 112078 words of memory out of 5000000
+ 6687 multiletter control sequences out of 15000+600000
  13091 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,10n,43p,263b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
-fb>
-Output written on report.pdf (11 pages, 286004 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (12 pages, 287363 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

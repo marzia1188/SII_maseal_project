@@ -53,7 +53,7 @@ I_{\Sigma}(x,y) =\sum_{i=0}^{x} \sum_{j=0}^{y} I(i,j)
 Ottenuta l'immagine integrale bastano quattro operazioni per calcolare un'a\-rea
 rettangolare di qualsiasi dimensione. Questa propriet\`a \`e sfruttata da SURF per la realizzazione di filtri di diverse dimensioni.
 
-La matrice Hessiana permette di individuare le strutture “blob” (regioni in cui
+La matrice Hessiana permette di individuare le strutture ``blob'' (regioni in cui
 propriet\`a come la luminosit\`a e il colore differiscono rispetto a quelle
 dell'ambiente) perch\`e in quei punti il determinante (o discriminante) \`e
 massimo, e di selezionare la scala dell'immagine; tuttavia le immagini con rotazioni di multipli dispari di \begin{math} \frac{\pi}{4} \end{math} perdono
@@ -107,8 +107,9 @@ che hanno lo stesso tipo di contrasto.
 I metodi basati su modello utilizzano una forma base che rappresenta
 l'immagine; questa viene utilizzata per trovare la  miglior corrispondenza tra
 il modello e una nuova immagine.
-Questo approccio “top-down” \`e pi\`u semplice e meno soggetto a errori di quello “bottom-up” nel quale l'immagine 
-viene analizzata per individuare particolari strutture e punti di interesse che la caratterizzano.
+Questo approccio ``top-down'' \`e pi\`u semplice e meno soggetto a errori di
+quello ``bottom-up'' nel quale l'immagine viene analizzata per individuare
+particolari strutture e punti di interesse che la caratterizzano.
 
 Gli Active shape models (ASMs) sono modelli statistici delle forme di
 oggetti che vengono iterativamente deformati fino ad adattarsi alle nuove
@@ -125,25 +126,27 @@ L'algoritmo ASM alterna due passi fondamentali:
   \item L'adattamento della forma al modello di distibuzione dei punti.
 \end{enumerate}
 
+
 Per il primo passo \`e necessario che l'algoritmo individui dei punti di
 riferimento sempre presenti nelle immagini appartenenti al training set: ci\`o
 implica che il training set deve contenere la stessa tipologia di oggetti e che questi ultimi abbiano una forma tale da prevedere 
 punti di riferimenti ben distinti.
-
-ASM \`e conveniente da utilizzare nel caso in cui:
- \begin{itemize}
-   \item Si possiede un insieme di immagini rappresentative del soggetto da rappresentare;
-   \item Gli oggetti hanno una forma definita;
-   \item Si conosce con buona approssimazione il target dell’immagine.
- \end{itemize}
-Nel caso invece di immagini in cui gli oggetti possono assumere forme molto diverse \`e preferibile utilizzare 
-un approccio ``bottom-up'' (estrazione delle features).
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.4]{Image/Figura1_4.png}
 \caption{I punti di riferimento trovati nell'immagine di un volto}
 \end{figure}
+
+ASM \`e conveniente da utilizzare nel caso in cui:
+ \begin{itemize}
+   \item Si possiede un insieme di immagini rappresentative del soggetto da rappresentare;
+   \item Gli oggetti hanno una forma definita;
+   \item Si conosce con buona approssimazione il target dell'immagine.
+ \end{itemize}
+Nel caso invece di immagini in cui gli oggetti possono assumere forme molto diverse \`e preferibile utilizzare 
+un approccio ``bottom-up'' (estrazione delle features).
+
 
 \subsection{Applicazioni simili}
 

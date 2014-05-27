@@ -2,10 +2,12 @@
 \contentsline {chapter}{\numberline {1}Introduzione}{1}
 \contentsline {section}{\numberline {1.1}Obiettivo/ Research question}{1}
 \contentsline {section}{\numberline {1.2}Stato dell'arte}{1}
-\contentsline {subsection}{\numberline {1.2.1}Speeded Up Robust Feature}{1}
-\contentsline {subsection}{\numberline {1.2.2}Active Shape Models}{4}
-\contentsline {subsection}{\numberline {1.2.3}Applicazioni simili}{6}
-\contentsline {subsubsection}{Artfinder}{6}
-\contentsline {subsubsection}{Google Goggles}{7}
-\contentsline {chapter}{Elenco delle figure}{10}
-\contentsline {chapter}{Bibliografia}{10}
+\contentsline {subsection}{\numberline {1.2.1}Eigenfaces}{1}
+\contentsline {subsection}{\numberline {1.2.2}Scale Invariant Feature Transform}{3}
+\contentsline {subsection}{\numberline {1.2.3}Speeded Up Robust Feature}{4}
+\contentsline {subsection}{\numberline {1.2.4}Active Shape Models}{7}
+\contentsline {subsection}{\numberline {1.2.5}Applicazioni simili}{9}
+\contentsline {subsubsection}{Artfinder}{9}
+\contentsline {subsubsection}{Google Goggles}{9}
+\contentsline {chapter}{Elenco delle figure}{12}
+\contentsline {chapter}{Bibliografia}{12}

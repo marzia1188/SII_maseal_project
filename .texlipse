@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue May 27 13:02:08 CEST 2014
+markTmpDer=false
+builderNum=2
+outputDir=SSI_maseal_report/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=SSI_maseal_report
+mainTexFile=introduzione.tex
+outputFile=introduzione.pdf
+langSpell=
+markDer=false
+srcDir=SSI_maseal_report/

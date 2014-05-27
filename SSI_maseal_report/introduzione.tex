@@ -11,6 +11,80 @@
 Scrivere obiettivo e research question
 
 \section{Stato dell'arte}
+
+\subsection{Eigenfaces}
+L'approccio Eigenfaces, applicato al problema di face classification, \'e stato
+ideato da M. Turk e A.Pentland nel  1987. Questo metodo non si basa su riconoscere 
+le caratteristiche salienti del volto, quali occhi, naso o bocca, ma enfatizza il 
+significato globale delle ``features''. Si estraggono le informazioni rilevanti di un volto, 
+si codificano e si comparano con altre secondo regole di similarit\'a. 
+In termini matematici vengono trovati gli autovettori della matrice di
+covarianza dall'insieme delle immagini dei volti e si tratta ogni singola
+immagine come un punto o vettore in uno spazio 
+ad alta dimensionalit\'a. Gli autovettori ottenuti producono un ``ghost face'',
+che \'e una combinazione lineare tra tutti quelli nel training set, al quale
+viene dato il nome di {\itshape eingenface}.\\
+Questo approccio si sviluppa in una serie di operazione di inizializzazione:
+\begin{enumerate}
+  \item[1.] Acquisire un insieme iniziale di immagini, della stessa
+  dimensione, di volti  centrati che costituiscono il training set. 
+  Ogni immagine di dimensione NxN costruisce un vettore $N^{2}x1$ della matrice
+  di covarianza.
+  \item[2.] Calcolare gli eigenfaces del training set dalla matrice di
+  covarianza, tenendo in considerazione solo le M immagini che corrispondono 
+  agli autovalori pi\'u alti (gli autovalori sono nella diagonale principale e
+  ordinati in modo crescente).
+  In questo modo si riduce la dimensionalit\'a dello spazio su cui si proiettano
+  le immagini; le M immagini definiscono lo {\itshape face space}.
+  Quando viene inserito un nuovo volto nel data set gli autovalori vengono ricalcolati
+  \item[3.] Proiettare nel nuovo spazio, face space, le immagini.
+\end{enumerate}
+Tali operazioni possono essere eseguite anche di volta in volta quando si ha una
+grande potenza di calcolo.\\
+Dopo l'inizializzazione del training set, si eseguono i successivi step per
+riconoscere una nuova immagine:
+\begin{enumerate}
+  \item [1.] Si calcolano i pesi della nuova immagine e gli M eigenfaces
+  proiettando l'immagine di ingresso su ogni eigenfaces.
+  \item[2.]	Si determina se l'immagine è un viso guardando la sua proiezione nel
+  ``face space''. Se la sua proiezione \'e molto vicina allo spazio in cui i
+  pesi degli altri volti si addensano, allora \' un volto, altrimenti no.
+  \item[3.] Se l'immagine \'e un volto, si classifica il peso sia se la persona
+  \'e conosciuta sia se non lo \'e.
+  \item[4.] (Opzionale) Aggiornare gli eigeinface e/o i pesi.
+  \item[5.] (Opzionale) Se lo stesso volto non conosciuto si presenta molteplici
+  volte, si calcolano i suoi pesi e vengono incorporate all'interno di volti
+  noti.
+\end{enumerate}
+ (qui inserimento di due immagini->fare descrizione immagini)
+Questo approccio ha il vantaggio di apprendere e riconoscere nuovi volti in modo ``unsupervised'' ovvero non viene applicata 
+un'etichetta a priori, come avviene nelle reti neurali artificiali.
+La complessit\'a computazionale nella fase di training \'e $O(n^{2}m^{2}L)$ e
+nella fase di test \'e O(LMN) dove n e m sono il numero di righe e colonne della
+matrice di covarianza, L \'e il numero di vettori di proiezione, M e N \'e la
+cardinalit\'a degli elementi di test e di training.
+
+\subsection{Scale Invariant Feature Transform}
+L'algoritmo SIFT (Scale Invariant feature transform), ideato da David Lowe nel
+1999, estrae le features invarianti e distintive di un immagine di qualsiasi tipo anche se viene ruotata o riscalata. 
+E' robusto anche in condizioni in cui l'immagine viene distorta con all'aggiunta
+di rumore, variazione di illuminazione o modificata in 3D perch\'e una singola
+feature pu\'o essere comparata con alta probabilit\'a con un enorme database di
+features provenienti da molteplici immagini.
+Il costo dell'estrazione delle features \'e minimizzato applicando un approccio
+di filtri a cascata, nel quale le operazione pi\'u costose vengono eseguite
+solamente alla fine. Gli step pi\'u importante per l'estrazione di un insieme di
+features da un immagine sono:
+\begin{enumerate}
+  \item {\itshape Scale-space extrema detection}\\
+  In questa fase vengono estratti i punti di interesse invarianti dalla scala, detti ``keypoints'', 
+  di un immagine mediante una funzione kernel ``Difference of Gaussian'' (DOG). (formule di DOG)
+(immagine gaussiana e difference of gaussian)
+  \item {\itshape Keypoint localization}\\
+  \item {\itshape Orientation Assignment}\\
+  \item{\itshape Keypoint Descriptor}\\
+\end{enumerate}
+
 \subsection{Speeded Up Robust Feature}
 \label{sec:iniziare}
 
